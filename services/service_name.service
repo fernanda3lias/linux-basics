@@ -1,0 +1,12 @@
+[Unit]
+Description=Description
+After=network.target
+
+[Service]
+ExecStart=Command
+WorkingDirectory=Command directory
+Restart=always
+#User=User
+
+[Install]
+WantedBy=multi-user.target
