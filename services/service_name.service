@@ -1,12 +1,12 @@
 [Unit]
-Description=Description
+Description=*description
 After=network.target
 
 [Service]
-ExecStart=Command
-WorkingDirectory=Command directory
+ExecStart=*command
+WorkingDirectory=*command directory
 Restart=always
-#User=User
+User=*user
 
 [Install]
 WantedBy=multi-user.target
