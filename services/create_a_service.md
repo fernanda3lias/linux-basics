@@ -20,8 +20,9 @@ sudo systemctl restart FILE_NAME
 ```
 - Whenever you edit the .service file or the code file being executed (the one you define in ExecStart), run:
 ```
-sudo systemctl daemon-reload and then restart the service.
+sudo systemctl daemon-reload
 ```
+- And then restart the service.
 4. Reminders
 - In the ExecStart field, you should put the command you want to be executed, always with the full path to the files, like:
 ```
