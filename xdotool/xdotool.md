@@ -16,4 +16,21 @@ I used this library to automatically resize a window and place it in the desired
 xdotool search --onlyvisible --name <window_name>
 ```
 
+<h3>Set the window size</h3>
 
+```
+xdotool windowsize <window_id> <width> <height>
+```
+
+<h3>Move the window</h3>
+
+```
+xdotool windowmove <window_id> <x> <y>
+```
+
+<h2>Tips</h2>
+
+* `xdotool` allows you to chain several commands together.
+```
+xdootool search --onlyvisible --name <window_name> windowmove <x> <y>
+```
