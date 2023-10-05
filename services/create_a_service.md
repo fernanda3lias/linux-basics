@@ -6,7 +6,8 @@
 sudo nano /etc/systemd/system/FILE_NAME.service
 ```
 
-<h2>Enable and start the service:</h2>
+<h2>Enable and start the service</h2>
+
 ```
 sudo systemctl enable FILE_NAME.service
 sudo systemctl start FILE_NAME.service
