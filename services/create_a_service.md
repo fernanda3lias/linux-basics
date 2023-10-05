@@ -15,36 +15,47 @@ sudo systemctl start FILE_NAME.service
 
 <h2>Utilities</h2>
 
-- Check the status:
+Check the status:
+ 
 ```
 sudo systemctl status SERVICE_NAME
 ```
+
 or
+
 ```
 journalctl -u SERVICE_NAME
 ```
-- Restart:
+Restart:
+
 ```
 sudo systemctl restart SERVICE_NAME
 ```
-- Whenever you edit the .service file or the code file being executed (the one you define in ExecStart), run:
+
+Whenever you edit the .service file or the code file being executed (the one you define in ExecStart), run:
+
 ```
 sudo systemctl daemon-reload
 ```
-- And then restart the service.
+
+And then restart the service.
 
 <h2> Reminders </h2>
-- In the ExecStart field, you should put the command you want to be executed, always with the full path to the files, like:
+
+In the ExecStart field, you should put the command you want to be executed, always with the full path to the files, like:
+
 ```
 usr/bin/python /home/embeddo/code.py
 ```
 
-- If you don't know the full path of a tool, just run:
+If you don't know the full path of a tool, just run:
+
 ```
 which MODULE
 ```
 
-- For example, if you run which python, it will return:
+For example, if you run which python, it will return:
+
 ```
 /usr/bin/python.
 ```
